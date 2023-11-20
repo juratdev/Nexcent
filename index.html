@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nexcent</title>
-  <link href="/dist/output.css" rel="stylesheet">
+  <link href="./dist/output.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class=" bg-[#F5F7FA]">
+  <header class="header">
     <nav
       class="container px-4 mx-auto flex items-center justify-between pt-[22px] h-20 max-lg:justify-center max-lg:gap-8 max-md:gap-4 max-md:justify-between">
       <a href="#" class="cursor-pointer ">
@@ -31,14 +31,16 @@
       <div class="flex items-center gap-x-3.5 text-sm max-md:hidden">
         <a href="#"
           class="px-5 py-2.5 transition duration-300 text-[#4CAF4F] hover:bg-[#4CAF4F] hover:text-white max-lg:px-3 max-lg:py-2">Login</a>
-        <a href="#" class="px-5 py-2.5 whitespace-nowrap bg-[#4CAF4F] text-white max-lg:px-3 max-lg:py-2">Sign up</a>
+        <a href="#"
+          class="px-5 py-2.5 transition duration-300 whitespace-nowrap bg-[#4CAF4F] text-white max-lg:px-3 max-lg:py-2 hover:bg-[#358538]">Sign
+          up</a>
       </div>
     </nav>
     <section class="bg-[#F5F7FA] h-[calc(100%-80px)] pb-24 relative">
       <div class="container flex justify-between px-4 pt-24 mx-auto max-lg:pt-16 max-lg:gap-12 max-md:pt-12 ">
         <div class="mt-20 max-lg:mt-12 max-md:mt-8">
           <h1
-            class="text-6xl font-bold max-w-[657px] text-[#4D4D4D] max-lg:text-4xl max-md:text-3xl max-md:font-semibold ">
+            class="text-6xl font-bold max-w-[657px] text-[#4D4D4D] max-lg:text-4xl max-md:text-3xl max-md:font-semibold max-[450px]:text-xl max-[450px]:w-full">
             Lessons and
             insights <span class="text-[#4CAF4F] font-semibold">from
               8 years</span>
@@ -59,6 +61,80 @@
       </div>
     </section>
   </header>
+  <section class="container px-4 mx-auto mt-10 mb-12 text-center">
+    <h2 class="text-[#4D4D4D] text-3xl font-semibold">Our Clients</h2>
+    <p class="text-[#717171] text-base mt-2">We have been working with some Fortune 500+ clients</p>
+    <div
+      class="grid justify-center grid-cols-7 gap-5 lg:justify-center lg:grid-cols-7 mt-14 lg:gap-36 max-md:grid-cols-4">
+      <div class="w-10 h-10"><img src="./images/clients/clients.svg" class="w-full" alt="clients"></div>
+      <div class="w-10 h-10"><img src="./images/clients/clients-2.svg" class="w-full" alt="clients"></div>
+      <div class="w-10 h-10"><img src="./images/clients/clients-3.svg" class="w-full" alt="clients"></div>
+      <div class="w-10 h-10"><img src="./images/clients/clients-4.svg" class="w-full" alt="clients"></div>
+      <div class="w-10 h-10"><img src="./images/clients/clients-5.svg" class="w-full" alt="clients"></div>
+      <div class="w-10 h-10"><img src="./images/clients/clients-6.svg" class="w-full" alt="clients"></div>
+      <div class="w-10 h-10"><img src="./images/clients/clients-7.svg" class="w-full" alt="clients"></div>
+    </div>
+  </section>
+  <section class="container px-4 mx-auto mb-12 text-center">
+    <h2 class="text-[#4D4D4D] w-2/5 mx-auto text-4xl font-semibold max-lg:text-3xl max-sm:text-2xl max-lg:w-full">Manage
+      your entire
+      community in a
+      single system
+    </h2>
+    <p class="text-[#717171] text-base mt-2">Who is Nextcent suitable for?</p>
+    <div
+      class="flex justify-between mt-4 max-md:justify-center max-md:flex-wrap max-lg:justify-start max-lg:gap-6 max-sm:gap-7">
+      <div
+        class="flex flex-col items-center justify-center px-8 py-6 text-center shadow-md max-lg:px-6 max-lg:py-4 w-80 max-lg:w-64 max-sm:w-96">
+        <div>
+          <img src="./images/community/people.svg" alt="people">
+        </div>
+        <h4 class="mt-4 mb-2 text-2xl font-bold max-lg:text-xl">Membership Organisations</h4>
+        <p class="text-[#717171]">Our membership management software provides full automation of membership
+          renewals and
+          payments</p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center px-8 py-6 text-center shadow-md max-lg:px-6 max-lg:py-4 w-80 max-lg:w-64 max-sm:w-96">
+        <div>
+          <img src="./images/community/national.svg" alt="national">
+        </div>
+        <h4 class="mt-4 mb-2 text-2xl font-bold max-lg:text-xl">National Associations</h4>
+        <p class="text-[#717171]">Our membership management software provides full automation of membership
+          renewals and
+          payments</p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center px-8 py-6 text-center shadow-md max-lg:px-6 max-lg:py-4 w-80 max-lg:w-64 max-sm:w-96">
+        <div>
+          <img src="./images/community/groups.svg" alt="groups">
+        </div>
+        <h4 class="mt-4 mb-2 text-2xl font-bold max-lg:text-xl">Clubs And Groups</h4>
+        <p class="text-[#717171]">Our membership management software provides full automation of membership
+          renewals and
+          payments</p>
+      </div>
+    </div>
+  </section>
+  <section class="container flex items-center justify-center gap-12 px-4 mx-auto mt-20 mb-24 max-sm:flex-col">
+    <div class="w-[440px] max-lg:w-[500px] max-md:w-[750px] max-sm:w-[300px]">
+      <img class="w-full" src="./images/rafiki.png" alt="rafiki-person">
+    </div>
+    <div class="w-[600px] max-sm:w-full">
+      <h2 class="text-[#4D4D4D] text-4xl font-semibold max-lg:text-3xl max-md:text-xl">The unseen of spending three
+        years at Pixelgrade
+      </h2>
+      <p class="text-[#717171] text-sm mt-4 max-md:text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+        sit amet
+        justo ipsum. Sed accumsan quam vitae est
+        varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam
+        pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
+        elementum pulvinar odio.</p>
+      <button
+        class="px-5 py-2.5 bg-[#4CAF4F] transition duration-300 text-white max-lg:px-3 max-lg:py-2 hover:bg-[#358538] mt-8 rounded">Learn
+        More</button>
+    </div>
+  </section>
 </body>
 
 </html>
