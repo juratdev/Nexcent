@@ -5,3 +5,11 @@
 .header {
   @apply bg-[#F5F7FA];
 }
+
+.footer-text {
+  @apply text-[#F5F7FA] text-sm;
+}
+
+.footer-text:hover {
+  @apply text-[#4CAF4F] transition duration-300;
+}
