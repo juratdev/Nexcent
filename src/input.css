@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.header {
-  @apply bg-[#F5F7FA];
+.containerMain {
+  @apply container px-4 mx-auto;
 }
-
 .footer-text {
   @apply text-[#F5F7FA] text-sm;
 }
