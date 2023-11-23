@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nexcent</title>
   <link href="./dist/output.css" rel="stylesheet">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <script src="./js/main.js" defer></script>
 </head>
 
@@ -41,7 +45,7 @@
 
     <section id="mobile-menu" class="absolute top-0 z-50 flex-col justify-center hidden w-full overflow-hidden text-5xl origin-top
       bg-[#0b1c0cc3] backdrop-blur-2xl animate-open-menu text-white">
-      <button class="self-end px-6 text-6xl">
+      <button class="self-end px-6 text-6xl duration-300 hover:text-red-500">
         &times;
       </button>
       <nav class="flex flex-col items-center min-h-screen py-8 mt-16 overflow-hidden gap-7" aria-label="mobile">
@@ -69,29 +73,77 @@
     </section>
   </header>
 
-  <section class="bg-secondary h-[calc(100%-80px)] pb-24 relative">
-    <div class="container flex justify-between px-4 pt-24 mx-auto max-lg:pt-16 max-lg:gap-12 max-md:pt-12 ">
-      <div class="mt-20 max-lg:mt-12 max-md:mt-8">
-        <h1
-          class="text-6xl font-bold max-w-[657px] text-tertiary max-lg:text-4xl max-md:text-3xl max-md:font-semibold max-[450px]:text-xl max-[450px]:w-full">
-          Lessons and
-          insights <span class="font-semibold text-primary">from
-            8 years</span>
-        </h1>
-        <p class="mt-4 text-base text-tertiaryGray max-lg:text-sm max-md:text-xs">Where to grow your business as a
-          photographer: site or
-          social media?
-        </p>
+  <section class="bg-secondary h-[calc(100%-80px)] relative">
+    <div class="swiper mySwiper">
+      <div class="pb-28 swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="container flex justify-between px-4 pt-24 mx-auto max-lg:pt-16 max-lg:gap-12 max-md:pt-12 ">
+            <div class="mt-20 max-lg:mt-12 max-md:mt-8">
+              <h1
+                class="text-6xl font-bold max-w-[657px] text-tertiary max-lg:text-4xl max-md:text-3xl max-md:font-semibold max-[450px]:text-xl max-[450px]:w-full">
+                Lessons and
+                insights <span class="font-semibold text-primary">from
+                  8 years</span>
+              </h1>
+              <p class="mt-4 text-base text-tertiaryGray max-lg:text-sm max-md:text-xs">Where to grow your business as a
+                photographer: site or
+                social media?
+              </p>
+            </div>
+            <div class="max-w-[280px]">
+              <img src="./images/entrance.png" alt="entrance image">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container flex justify-between px-4 pt-24 mx-auto max-lg:pt-16 max-lg:gap-12 max-md:pt-12 ">
+            <div class="mt-20 max-lg:mt-12 max-md:mt-8">
+              <h1
+                class="text-6xl font-bold max-w-[657px] text-tertiary max-lg:text-4xl max-md:text-3xl max-md:font-semibold max-[450px]:text-xl max-[450px]:w-full">
+                Insights and
+                lessons <span class="font-semibold text-primary">from
+                  5 years</span>
+              </h1>
+              <p class="mt-4 text-base text-tertiaryGray max-lg:text-sm max-md:text-xs">Where to grow your business as a
+                photographer: site or
+                social media?
+              </p>
+            </div>
+            <div class="max-w-[280px]">
+              <img src="./images/entranceTwo.png" alt="entrance image">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container flex justify-between px-4 pt-24 mx-auto max-lg:pt-16 max-lg:gap-12 max-md:pt-12 ">
+            <div class="mt-20 max-lg:mt-12 max-md:mt-8">
+              <h1
+                class="text-6xl font-bold max-w-[657px] text-tertiary max-lg:text-4xl max-md:text-3xl max-md:font-semibold max-[450px]:text-xl max-[450px]:w-full">
+                Working and
+                insights <span class="font-semibold text-primary">from
+                  12 years</span>
+              </h1>
+              <p class="mt-4 text-base text-tertiaryGray max-lg:text-sm max-md:text-xs">Where to grow your business as a
+                photographer: site or
+                social media?
+              </p>
+            </div>
+            <div class="max-w-[280px]">
+              <img src="./images/entranceThree.png" alt="entrance image">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="max-w-[280px]">
-        <img src="./images/entrance.png" alt="entrance image">
-      </div>
+      <div class="swiper-button-next max-lg:hidden" style="color: #4CAF4F;"></div>
+      <div class="swiper-button-prev max-lg:hidden" style="color: #4CAF4F;"></div>
+      <div class="text-green-500 swiper-pagination" style="color: #4CAF4F;"></div>
     </div>
-    <div class="absolute flex -translate-x-1/2 gap-x-2 left-1/2 bottom-10">
+
+    <!-- <div class="absolute flex -translate-x-1/2 gap-x-2 left-1/2 bottom-10">
       <span class="inline-block w-2 h-2 rounded-full cursor-pointer bg-primary"></span>
       <span class="w-2 h-2 rounded-full bg-primary/[.5] inline-block cursor-pointer hover:bg-primary"></span>
       <span class="w-2 h-2 rounded-full bg-primary/[.5] hover:bg-primary inline-block cursor-pointer"></span>
-    </div>
+    </div> -->
   </section>
 
   <section class="mt-10 mb-12 text-center containerMain">
@@ -371,9 +423,9 @@
       <div>
         <a href="#" class="flex items-center gap-2"><img src="./images/Footer/Icon.svg" alt="logo"><img
             src="./images/Footer/Nexcent.svg" alt="logo"></a>
-        <p class="mt-10">Copyright © 2020 Nexcent ltd.</p>
-        <p>All rights reserved</p>
-        <div class="flex items-center gap-4 mt-10">
+        <p class="mt-10 max-sm:hidden">Copyright © 2020 Nexcent ltd.</p>
+        <p class="max-sm:hidden">All rights reserved</p>
+        <div class="flex items-center gap-4 mt-10 max-sm:hidden">
           <a href="#" class="transition duration-300 hover:scale-110">
             <img src="./images/Footer/instagram.svg" alt="instagram">
           </a>
@@ -389,7 +441,7 @@
         </div>
       </div>
 
-      <div class="flex gap-10 max-md:mt-8 max-sm:flex-col max-sm:justify-center">
+      <div class="flex gap-10 max-md:mt-8 max-sm:flex-wrap max-sm:justify-center">
         <div>
           <h3 class="mb-6 text-xl font-semibold">Company</h3>
           <ul>
@@ -420,6 +472,24 @@
             </form>
           </div>
         </div>
+      </div>
+      <div class="flex items-center gap-4 mt-10 sm:hidden">
+        <a href="#" class="transition duration-300 hover:scale-110">
+          <img src="./images/Footer/instagram.svg" alt="instagram">
+        </a>
+        <a href="#" class="transition duration-300 hover:scale-110">
+          <img src="./images/Footer/drible.svg" alt="drible">
+        </a>
+        <a href="#" class="transition duration-300 hover:scale-110">
+          <img src="./images/Footer/twiter.svg" alt="twiter">
+        </a>
+        <a href="#" class="transition duration-300 hover:scale-110">
+          <img src="./images/Footer/youtube.svg" alt="youtube">
+        </a>
+      </div>
+      <div>
+        <p class="mt-10 sm:hidden">Copyright © 2020 Nexcent ltd.</p>
+        <p class="sm:hidden">All rights reserved</p>
       </div>
     </div>
   </footer>
